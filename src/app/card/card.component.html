@@ -1,0 +1,12 @@
+<div *ngIf="cardData">
+  <mat-card class="country-card" (click)="openCountryDetails()">
+    <img class="country-flag" [src]="cardData.flag" alt="">
+    <img src="assets/img.png" alt="" class="country-icon-image">
+    <div class="country-heading-text">
+      {{cardData.name}}
+    </div>
+    <div class="country-heading-sub-text">{{cardData.continent}}</div>
+
+  </mat-card>
+
+</div>

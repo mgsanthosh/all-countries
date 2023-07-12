@@ -1,0 +1,32 @@
+.country-details-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 0 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #5d5d5d;
+}
+.country-details-flag {
+  width: 60%;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.country-details-content-container {
+  padding: 20px;
+}
+.country-details-info-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.info-name {
+  width: 30%;
+  font-weight: 600;
+}
+.info-value {
+  width: 70%;
+}

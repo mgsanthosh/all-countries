@@ -1,0 +1,36 @@
+<div class="country-details-header-container">
+  <div>{{data.name}}</div>
+  <div mat-dialog-close><mat-icon>close</mat-icon></div>
+</div>
+<div class="country-details-content-container">
+  <img [src]="data.flag" alt="" class="country-details-flag">
+  <div class="country-details-info-container">
+    <div class="info-name">Capital: </div>
+    <div class="info-value">{{data.capital}}</div>
+  </div>
+  <div class="country-details-info-container">
+    <div class="info-name">Continent: </div>
+    <div class="info-value">{{data.continent}}</div>
+  </div>
+  <div class="country-details-info-container">
+    <div class="info-name">Currency: </div>
+    <div class="info-value"><span  *ngFor="let curr of Object.keys(data.currency)">
+       {{Object.values(data.currency[curr])}}
+    </span>
+     </div>
+  </div>
+  <div class="country-details-info-container">
+    <div class="info-name">Languages: </div>
+    <div class="info-value" ><span *ngFor="let lan of data.languages | keyvalue">
+     {{lan.value}}
+    </span> </div>
+  </div>
+  <div class="country-details-info-container">
+    <div class="info-name">Population: </div>
+    <div class="info-value">{{data.population}}</div>
+  </div>
+  <div class="country-details-info-container">
+    <div class="info-name">Timezone: </div>
+    <div class="info-value">{{data.timeZone}}</div>
+  </div>
+</div>
